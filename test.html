@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Form Redirection</title>
+</head>
+<body>
+    <iframe
+        src="https://docs.google.com/forms/d/e/1FAIpQLScsp55ZUxE199qKiuS3yCwC4K4WnlwlF2cmsdFE-AYMCpd-jA/viewform?usp=sf_link"
+        width="100%"
+        height="500"
+        frameborder="0"
+        marginheight="0"
+        marginwidth="0"
+    >Loading...</iframe>
+
+    <script>
+        // Get the iframe element
+        var iframe = document.querySelector('iframe');
+
+        // Add a listener for form submissions
+        iframe.addEventListener('load', function() {
+            // Check if the form submission is successful (this might vary based on your Google Form setup)
+            var isFormSubmitted = // Add your logic here to determine if the form is submitted successfully;
+
+            if (isFormSubmitted) {
+                // Redirect the user to a new page
+                window.location.href = "https://chat.whatsapp.com/FPm0nJ4nbyELKrAt6orumH";
+            }
+        });
+    </script>
+</body>
+</html>
